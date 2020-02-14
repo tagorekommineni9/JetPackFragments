@@ -72,7 +72,7 @@ public class FirstFragment extends Fragment {
         adapter = new RecycleAdapater(pary,getActivity().getApplicationContext());
         LinearLayoutManager manager = new LinearLayoutManager(getActivity().getApplicationContext(),LinearLayoutManager.VERTICAL,false);
 
-        RecyclerView recyclerView = view.findViewById(R.id.recycle_view);
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(adapter);
 
