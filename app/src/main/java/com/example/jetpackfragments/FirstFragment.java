@@ -32,7 +32,7 @@ public class FirstFragment extends Fragment {
 
 
     ArrayList<Pokemon_> parray;
-    RecycleAdapater adapater;
+    RecycleAdapater adapter;
 
     public FirstFragment() {
 
@@ -69,12 +69,12 @@ public class FirstFragment extends Fragment {
 
     public  void generateView(ArrayList<Pokemon_> pary, View view)
     {
-        adapater = new RecycleAdapater(pary,getActivity().getApplicationContext());
+        adapter = new RecycleAdapater(pary,getActivity().getApplicationContext());
         LinearLayoutManager manager = new LinearLayoutManager(getActivity().getApplicationContext(),LinearLayoutManager.VERTICAL,false);
 
         RecyclerView recyclerView = view.findViewById(R.id.recycle_view);
         recyclerView.setLayoutManager(manager);
-        recyclerView.setAdapter(adapater);
+        recyclerView.setAdapter(adapter);
 
     }
 
