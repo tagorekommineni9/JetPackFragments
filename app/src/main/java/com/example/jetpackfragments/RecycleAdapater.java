@@ -53,7 +53,7 @@ public class RecycleAdapater extends RecyclerView.Adapter<RecycleAdapater.ViewHo
             super(itemView);
 
             pkimg = itemView.findViewById(R.id.img_pk);
-            pkname = itemView.findViewById(R.id.txt_pknm);
+            pkname = itemView.findViewById(R.id.txt_pk);
 
             itemView.setTag(this);
         }
