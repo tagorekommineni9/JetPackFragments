@@ -39,6 +39,10 @@ public class RecycleAdapater extends RecyclerView.Adapter<RecycleAdapater.ViewHo
         holder.pkname.setText(arrypro.get(position).getName());
     }
 
+    public void setClickListener(View.OnClickListener itemlistener){
+        this.itemlistener = itemlistener;
+    }
+
     @Override
     public int getItemCount() {
         return arrypro.size();
@@ -56,6 +60,8 @@ public class RecycleAdapater extends RecyclerView.Adapter<RecycleAdapater.ViewHo
             pkname = itemView.findViewById(R.id.txt_pk);
 
             itemView.setTag(this);
+
+            itemView.setOnClickListener(itemlistener);
         }
     }
 }
